@@ -2,4 +2,4 @@ steps:
   - uses: actions/checkout@v2
   - uses: ahmadnassri/action-dependabot-auto-merge@v2
     with:
-      github-token: ${{ secrets.my_token }}
+      github-token: ${{ secrets.MY_TOKEN }}
