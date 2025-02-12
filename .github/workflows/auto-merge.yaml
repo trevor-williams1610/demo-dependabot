@@ -3,6 +3,7 @@ name: Merger
 on:
   - pull_request
   - issues
+  - workflow_dispatch   
 
 jobs:
   auto-merge:
