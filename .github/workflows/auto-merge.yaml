@@ -1,9 +1,11 @@
 name: Merger
 
 on:
-  - pull_request
-  - issues
-  - workflow_dispatch   
+  workflow_dispatch:
+  pull_request:
+  issues:
+  schedule:
+    - cron: "*/1 * * * *"  # Runs every minute (may be throttled)
 
 jobs:
   auto-merge:
